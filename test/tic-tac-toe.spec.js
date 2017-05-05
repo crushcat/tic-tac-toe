@@ -3409,13 +3409,13 @@ describe('TicTacToe', () => {
             let game;
 
             game = new TicTacToe();
-            game.nextTurn(2, 1)
-            expect(game.isFinished()).to.equal(false)
-            expect(game.getWinner()).to.equal(null)
+            game.nextTurn(2, 1);
+            expect(game.isFinished()).to.equal(false);
+            expect(game.getWinner()).to.equal(null);
             expect(game.noMoreTurns()).to.equal(false);
             expect(game.isDraw()).to.equal(false);
-            expect(game.getFieldValue(2, 1)).to.equal('x')
-            expect(game.getCurrentPlayerSymbol()).to.equal('o')
+            expect(game.getFieldValue(2, 1)).to.equal('x');
+            expect(game.getCurrentPlayerSymbol()).to.equal('o');
 
             game.nextTurn(2, 1)
             expect(game.isFinished()).to.equal(false)
